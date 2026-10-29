@@ -1,0 +1,84 @@
+name: Release VELVET Launcher
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    name: Windows installer
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Publish Windows x64
+        shell: pwsh
+        run: dotnet publish src/Velvet.Launcher.App/Velvet.Launcher.App.csproj --configuration Release --runtime win-x64 --self-contained true -p:PublishSingleFile=false -p:DebugType=None -o packaging/windows/publish
+      - name: Install Inno Setup
+        shell: pwsh
+        run: choco install innosetup --yes --no-progress
+      - name: Build installer
+        shell: pwsh
+        run: |
+          $version = if ($env:GITHUB_REF_NAME -match '^v(.+)$') { $Matches[1] } else { '0.0.0-dev' }
+          & 'C:\Program Files (x86)\Inno Setup 6\ISCC.exe' /DPublishDir="$PWD\packaging\windows\publish" /DAppVersion=$version packaging/windows/VELVET-Launcher.iss
+      - uses: actions/upload-artifact@v4
+        with:
+          name: VELVET-Launcher-windows-x64
+          path: packaging/windows/artifacts/*.exe
+
+  macos:
+    name: macOS Apple Silicon installer
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Build macOS arm64 DMG
+        run: bash packaging/macos/build.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: VELVET-Launcher-macos-arm64
+          path: packaging/macos/artifacts/*.dmg
+
+  release:
+    name: Publish GitHub Release
+    needs: [windows, macos]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          path: release-assets
+          merge-multiple: true
+      - name: Calculate next patch version
+        id: version
+        shell: bash
+        run: |
+          latest="$(git tag --list 'v*' --sort=-v:refname | head -n 1)"
+          if [[ "$latest" =~ ^v([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+            next="v${BASH_REMATCH[1]}.${BASH_REMATCH[2]}.$((BASH_REMATCH[3] + 1))"
+          else
+            next="v0.1.0"
+          fi
+          echo "tag=$next" >> "$GITHUB_OUTPUT"
+          echo "Creating release $next after successful installers build"
+      - name: Create tag and release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ steps.version.outputs.tag }}
+        shell: bash
+        run: |
+          gh release create "$RELEASE_TAG" release-assets/* \
+            --target "$GITHUB_SHA" \
+            --title "VELVET Launcher $RELEASE_TAG" \
+            --generate-notes

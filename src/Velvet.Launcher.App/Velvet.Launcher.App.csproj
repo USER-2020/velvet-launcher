@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Velvet.Launcher.App</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.6" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.6" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.6" />
+    <!-- Avalonia's Linux backend brings this transitively; pin the fixed security release. -->
+    <PackageReference Include="Tmds.DBus.Protocol" Version="0.21.3" />
+    <ProjectReference Include="../Velvet.Launcher.Core/Velvet.Launcher.Core.csproj" />
+    <ProjectReference Include="../Velvet.Launcher.Application/Velvet.Launcher.Application.csproj" />
+    <ProjectReference Include="../Velvet.Launcher.Infrastructure/Velvet.Launcher.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

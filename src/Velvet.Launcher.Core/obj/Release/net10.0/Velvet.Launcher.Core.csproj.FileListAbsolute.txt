@@ -1,0 +1,11 @@
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/bin/Release/net10.0/Velvet.Launcher.Core.deps.json
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/bin/Release/net10.0/Velvet.Launcher.Core.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/bin/Release/net10.0/Velvet.Launcher.Core.pdb
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/obj/Release/net10.0/Velvet.Launcher.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/obj/Release/net10.0/Velvet.Launcher.Core.AssemblyInfoInputs.cache
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/obj/Release/net10.0/Velvet.Launcher.Core.AssemblyInfo.cs
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/obj/Release/net10.0/Velvet.Launcher.Core.csproj.CoreCompileInputs.cache
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/obj/Release/net10.0/Velvet.Launcher.Core.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/obj/Release/net10.0/refint/Velvet.Launcher.Core.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/obj/Release/net10.0/Velvet.Launcher.Core.pdb
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Core/obj/Release/net10.0/ref/Velvet.Launcher.Core.dll

@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><RootNamespace>Velvet.Launcher.Application</RootNamespace></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../Velvet.Launcher.Core/Velvet.Launcher.Core.csproj" /></ItemGroup>
+</Project>

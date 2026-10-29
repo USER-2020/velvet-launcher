@@ -1,0 +1,15 @@
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/bin/Debug/net10.0/Velvet.Launcher.Application.deps.json
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/bin/Debug/net10.0/Velvet.Launcher.Application.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/bin/Debug/net10.0/Velvet.Launcher.Application.pdb
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/bin/Debug/net10.0/Velvet.Launcher.Core.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/bin/Debug/net10.0/Velvet.Launcher.Core.pdb
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/Velvet.Launcher.Application.csproj.AssemblyReference.cache
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/Velvet.Launcher.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/Velvet.Launcher.Application.AssemblyInfoInputs.cache
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/Velvet.Launcher.Application.AssemblyInfo.cs
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/Velvet.Launcher.Application.csproj.CoreCompileInputs.cache
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/Velvet.L.F5475AE6.Up2Date
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/Velvet.Launcher.Application.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/refint/Velvet.Launcher.Application.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/Velvet.Launcher.Application.pdb
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Application/obj/Debug/net10.0/ref/Velvet.Launcher.Application.dll

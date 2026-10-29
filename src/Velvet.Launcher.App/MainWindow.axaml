@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Velvet.Launcher.App.MainWindow"
+        Width="720" Height="520" MinWidth="620" MinHeight="460"
+        Title="VELVET Launcher" Background="#120F18">
+  <Grid RowDefinitions="Auto,*,Auto" Margin="32">
+    <StackPanel Spacing="4">
+      <TextBlock Text="THE VELVET STUDIO" Foreground="#D7B3FF" FontSize="14" LetterSpacing="3" />
+      <TextBlock Text="VELVET LAUNCHER" Foreground="White" FontSize="30" FontWeight="Bold" />
+    </StackPanel>
+    <Grid Grid.Row="1" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" Margin="0,34,0,0">
+      <Border Background="#211B2B" CornerRadius="12" Padding="20">
+        <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto">
+          <TextBlock Text="Estación" Foreground="#AFA5BA" />
+          <TextBlock Grid.Column="1" Text="{Binding StationName}" Foreground="White" HorizontalAlignment="Right" />
+          <TextBlock Grid.Row="1" Text="Sistema" Foreground="#AFA5BA" Margin="0,12,0,0" />
+          <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding OperatingSystem}" Foreground="White" HorizontalAlignment="Right" Margin="0,12,0,0" />
+          <TextBlock Grid.Row="2" Text="Estado de Master" Foreground="#AFA5BA" Margin="0,12,0,0" />
+          <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding MasterStatus}" Foreground="#B9F6CA" HorizontalAlignment="Right" Margin="0,12,0,0" />
+        </Grid>
+      </Border>
+      <StackPanel Grid.Row="1" Spacing="10" Margin="0,20,0,0">
+        <TextBlock Text="Preparación local" Foreground="White" FontSize="18" FontWeight="SemiBold" />
+        <TextBlock Text="Chrome, OBS y MeshCentral Agent deben estar instalados para usar esta estación." Foreground="#C8C0D0" TextWrapping="Wrap" />
+        <TextBlock Text="{Binding DependencySummary}" Foreground="#B9F6CA" />
+        <Button Content="INSTALAR FALTANTES" Click="InstallMissing" HorizontalAlignment="Left" Padding="14,7" />
+        <Button Content="DESCARGAR MESHCENTRAL AGENT" Click="OpenMeshCentralDownload" IsVisible="{Binding MeshCentralMissing}" HorizontalAlignment="Left" Padding="14,7" />
+      </StackPanel>
+      <Border Grid.Row="2" IsVisible="{Binding NeedsEnrollment}" Background="#211B2B" CornerRadius="12" Padding="18" Margin="0,18,0,0">
+        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto">
+          <TextBlock Text="Enrolar estación" Foreground="White" FontSize="18" FontWeight="SemiBold" />
+          <TextBlock Grid.Row="1" Text="Genera el código en Station Manager y pégalo aquí." Foreground="#AFA5BA" Margin="0,8,0,0" />
+          <TextBox Grid.Column="1" Text="{Binding EnrollmentCode}" Watermark="Código temporal" Width="220" Margin="16,0,0,0" />
+          <Button Grid.Row="1" Grid.Column="1" Content="ENROLAR" Click="Enroll" Background="#8D5AC7" Foreground="White" Padding="18,8" Margin="16,12,0,0" />
+        </Grid>
+      </Border>
+      <TextBlock Grid.Row="4" Text="Después del enrolamiento, Master administrará la Room, la asignación y los turnos." Foreground="#AFA5BA" Margin="0,20,0,0" TextWrapping="Wrap" />
+      <StackPanel Grid.Row="3" Orientation="Horizontal" Spacing="12" Margin="0,24,0,0">
+        <Button Content="ABRIR VELVET MASTER" Click="OpenMaster" Background="#8D5AC7" Foreground="White" Padding="18,10" />
+        <Button Content="ACTUALIZAR ESTADO" Click="Refresh" Padding="18,10" />
+      </StackPanel>
+      <Border Grid.Row="5" Background="#211B2B" CornerRadius="8" Padding="10" Margin="0,22,0,0">
+        <TextBlock Text="{Binding LastMessage}" Foreground="#B9F6CA" TextWrapping="Wrap" />
+      </Border>
+    </Grid>
+    <TextBlock Grid.Row="2" Text="Configuración de inicio automático disponible por plataforma." Foreground="#777080" FontSize="12" />
+    <Border Grid.Row="0" Grid.RowSpan="3" IsVisible="{Binding ToastVisible}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,18,18,0" Background="#2B1735" BorderBrush="#B65BDA" BorderThickness="1" CornerRadius="10" Padding="16,10" MaxWidth="430">
+      <TextBlock Text="{Binding ToastMessage}" Foreground="White" TextWrapping="Wrap" />
+    </Border>
+  </Grid>
+</Window>

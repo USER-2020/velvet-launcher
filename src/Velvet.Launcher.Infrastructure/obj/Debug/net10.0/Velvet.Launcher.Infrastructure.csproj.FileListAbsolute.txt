@@ -1,0 +1,15 @@
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/bin/Debug/net10.0/Velvet.Launcher.Infrastructure.deps.json
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/bin/Debug/net10.0/Velvet.Launcher.Infrastructure.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/bin/Debug/net10.0/Velvet.Launcher.Infrastructure.pdb
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/bin/Debug/net10.0/Velvet.Launcher.Core.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/bin/Debug/net10.0/Velvet.Launcher.Core.pdb
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/Velvet.Launcher.Infrastructure.csproj.AssemblyReference.cache
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/Velvet.Launcher.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/Velvet.Launcher.Infrastructure.AssemblyInfoInputs.cache
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/Velvet.Launcher.Infrastructure.AssemblyInfo.cs
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/Velvet.Launcher.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/Velvet.L.18CA87FD.Up2Date
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/Velvet.Launcher.Infrastructure.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/refint/Velvet.Launcher.Infrastructure.dll
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/Velvet.Launcher.Infrastructure.pdb
+/Users/juanfernandozuluagaaguirre/Documents/GitHub/velvet-launcher/src/Velvet.Launcher.Infrastructure/obj/Debug/net10.0/ref/Velvet.Launcher.Infrastructure.dll
