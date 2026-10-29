@@ -43,3 +43,9 @@ El Launcher registra el inicio automático solo cuando se ejecuta como aplicaci�
 El workflow `.github/workflows/release.yml` genera un instalador Windows x64 y un DMG macOS Apple Silicon (`osx-arm64`) al publicar una etiqueta `vX.Y.Z`.
 
 Consulta el [diagnóstico y plan](docs/diagnostico-y-plan.md) para límites, riesgos y funcionalidades pendientes.
+
+Manuales:
+
+- [Despliegue en macOS](docs/DESPLIEGUE_MACOS.md)
+- [Despliegue en Windows](docs/DESPLIEGUE_WINDOWS.md)
+- [Pruebas](docs/PRUEBAS.md)
